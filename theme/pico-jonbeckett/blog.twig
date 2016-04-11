@@ -53,7 +53,8 @@
     {% if page.id starts with "blog/" %}
         <div class="post">
             <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
-            <p class="excerpt">{{ page.description }}</p>
+            <p>{{ page.description }}</p>
+			<p><a class="btn btn-primary" href="{{ page.url }}" role="button">Read More &raquo;</a></p>
 			<hr />
         </div>
     {% endif %}
