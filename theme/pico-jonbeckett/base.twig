@@ -42,7 +42,7 @@
 <div id="navbar" class="collapse navbar-collapse">
 <ul class="nav navbar-nav">
 {% for page in pages %}
-{% if not (page.id starts with "blog/") %}
+{% if not page.date %}
 <li class="{{ page.id == current_page.id ? 'active' }}"><a href="{{ page.url }}">{{ page.title }}</a></li>
 {% endif %}
 {% endfor %}

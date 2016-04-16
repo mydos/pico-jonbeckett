@@ -5,7 +5,7 @@
 {{ parent() }}
 
 {% for page in pages|sort_by("time")|reverse %}
-    {% if page.id starts with "blog/" %}
+    {% if page.date %}
         <div class="post">
             <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
 			<p>{{ page.date_formatted }}</p>
